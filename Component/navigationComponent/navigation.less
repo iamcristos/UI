@@ -1,0 +1,39 @@
+header{
+    .displayFlex(row, space-around);
+    align-items: center;
+    width: @width;
+    height: 80px;
+    background-color: @lightBlueColor;
+    .right-nav-item{
+        nav{
+            .displayFlex(column, center);
+            align-items: flex-end;
+            margin-left: 2rem;
+            .show-nav-item{
+                .displayFlex(row, space-around);
+                margin-left: 30px; 
+
+                i{
+                    padding: 0 25px;
+                    margin-left:20px;
+                }
+            }
+            a{
+                display: none;
+            }
+
+            .show-nav{
+                margin-top: 3.8rem;
+                margin-bottom: .3rem
+            };
+
+            .show {
+                display: flex;
+                margin-left: 5rem;
+                text-align: center;
+                padding: .1rem;
+                text-decoration: none
+            }
+        }
+    }
+}
