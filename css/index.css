@@ -138,6 +138,11 @@ header {
   height: 80px;
   background-color: #ADD8E6;
 }
+@media (min-width: 550px) {
+  header .left-nav-item {
+    margin-left: 0;
+  }
+}
 header .right-nav-item nav {
   display: flex;
   flex-direction: column;
@@ -155,8 +160,21 @@ header .right-nav-item nav .show-nav-item i {
   padding: 0 25px;
   margin-left: 20px;
 }
+@media (min-width: 800px) {
+  header .right-nav-item nav .show-nav-item {
+    display: none;
+  }
+}
 header .right-nav-item nav a {
   display: none;
+}
+@media (min-width: 800px) {
+  header .right-nav-item nav a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 2rem;
+    color: black;
+  }
 }
 header .right-nav-item nav .show-nav {
   margin-top: 3.8rem;
@@ -168,6 +186,12 @@ header .right-nav-item nav .show {
   text-align: center;
   padding: 0.1rem;
   text-decoration: none;
+  color: black;
+}
+@media (min-width: 550px) {
+  header .right-nav-item {
+    margin-left: 13rem;
+  }
 }
 :root html {
   font-size: 62.5%;

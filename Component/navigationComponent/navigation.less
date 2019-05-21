@@ -4,6 +4,11 @@ header{
     width: @width;
     height: 80px;
     background-color: @lightBlueColor;
+    .left-nav-item{
+        @media(@mediaTab){
+            margin-left: 0;
+        }
+    };
     .right-nav-item{
         nav{
             .displayFlex(column, center);
@@ -17,14 +22,24 @@ header{
                     padding: 0 25px;
                     margin-left:20px;
                 }
+                @media(@mediaDesktop) {
+                    display: none;
+                }
             }
             a{
                 display: none;
+                
+                @media(@mediaDesktop) {
+                display: inline-block;
+                text-decoration: none;
+                padding: 2rem;
+                color: black;
+                }
             }
 
             .show-nav{
                 margin-top: 3.8rem;
-                margin-bottom: .3rem
+                margin-bottom: .3rem;
             };
 
             .show {
@@ -32,8 +47,12 @@ header{
                 margin-left: 5rem;
                 text-align: center;
                 padding: .1rem;
-                text-decoration: none
+                text-decoration: none;
+                color: black
             }
         }
+        @media(@mediaTab){
+            margin-left: 13rem;
+        };
     }
 }
